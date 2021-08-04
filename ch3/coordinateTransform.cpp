@@ -26,4 +26,5 @@ int main() {
 
     Vector3d p2 = T2w * (T1w.inverse() *  p1);
     cout << "p2 = " << p2.transpose() << endl;
+
 }

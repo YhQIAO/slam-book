@@ -4,4 +4,8 @@ project(ch3)
 set(CMAKE_CXX_STANDARD 11)
 include_directories("/usr/include/eigen3")
 
-add_executable(ch3 coordinateTransform.cpp)
+find_package(Pangolin 0.4 REQUIRED)
+include_directories(${Pangolin_INCLUDE_DIRECTORIES})
+
+add_executable(ch3  plotTrajectory.cpp)
+target_link_libraries(ch3 ${Pangolin_LIBRARIES})
