@@ -1,3 +1,5 @@
+[toc]
+
 # SLAM十四讲学习记录
 
 管他能看懂多少，先学学看。。。
@@ -19,5 +21,5 @@
 
 显示轨迹demo
 
-<img src="https://gitee.com/YhQIAOXYZ/BlogImages/raw/master/images/2021-08-04_16-13.png" style="zoom: 10%;" />
+<img src="https://gitee.com/YhQIAOXYZ/BlogImages/raw/master/images/2021-08-04_16-13.png" style="zoom: 20%;" />
 
