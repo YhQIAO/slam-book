@@ -19,5 +19,5 @@
 
 显示轨迹demo
 
-![](https://gitee.com/YhQIAOXYZ/BlogImages/raw/master/images/2021-08-04_16-13.png)
+<img src="https://gitee.com/YhQIAOXYZ/BlogImages/raw/master/images/2021-08-04_16-13.png" style="zoom: 20%;" />
 
