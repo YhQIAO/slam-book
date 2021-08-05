@@ -23,3 +23,5 @@
 
 <img src="https://gitee.com/YhQIAOXYZ/BlogImages/raw/master/images/2021-08-04_16-13.png" style="zoom: 20%;" />
 
+2021.8.5
+- 李群与李代数（看的我很懵逼）
