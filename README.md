@@ -21,12 +21,12 @@
 
 显示轨迹demo
 
-<img src="https://gitee.com/YhQIAOXYZ/BlogImages/raw/master/images/2021-08-04_16-13.png" style="zoom: 20%;" />
-
 ## ch4
 
 2021.8.5
 - 李群与李代数（看的我很懵逼）
+
+## ch5
 
 2021.8.6
 - ch5 相机图像
