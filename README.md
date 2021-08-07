@@ -32,3 +32,13 @@
 - ch5 相机图像
 - 图像视觉demo
 - rgbd demo
+
+
+
+## ch6
+
+2021.8.7
+
+- 非线性数学优化
+- 手写高斯牛顿demo
+- ceres与g2o 注意g2o的cmake文件配置 要额外加一个文件夹里面放FindG2O.cmake
