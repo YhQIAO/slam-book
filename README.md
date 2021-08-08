@@ -42,3 +42,11 @@
 - 非线性数学优化
 - 手写高斯牛顿demo
 - ceres与g2o 注意g2o的cmake文件配置 要额外加一个文件夹里面放FindG2O.cmake
+
+## ch7
+
+2021.8.8
+
+- 特征匹配简述 orbdemo
+- 2d-2d位姿估计 
+- 3d-2d PnP
