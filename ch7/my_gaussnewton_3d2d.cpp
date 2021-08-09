@@ -171,6 +171,7 @@ int main(int argc, char **argv) {
     cout << "3d-2d pairs: " << pts_3d.size() << endl;
     cout << "calling bundle adjustment by gauss newton" << endl;
     Sophus::SE3d pose_gn;
+    cout << "initial pose = " << pose_gn.matrix() << endl;
     chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
     t1 = chrono::steady_clock::now();
     bundleAdjustmentGaussNewton(pts_3d_eigen, pts_2d_eigen, K, pose_gn);
