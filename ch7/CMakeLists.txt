@@ -30,3 +30,14 @@ target_link_libraries(pose_estimation_3d2d
         ${OpenCV_LIBS}
         g2o_core g2o_stuff
         fmt) # when use sophus remember to use fmt
+
+add_executable(pose_estimation_3d3d pose_estimation_3d3d.cpp)
+target_link_libraries(pose_estimation_3d3d ${OpenCV_LIBS}
+        g2o_core g2o_stuff
+        fmt)
+
+add_executable(my_gaussnewton_3d2d my_gaussnewton_3d2d.cpp)
+target_link_libraries(my_gaussnewton_3d2d
+        ${OpenCV_LIBS}
+        g2o_core g2o_stuff
+        fmt)
