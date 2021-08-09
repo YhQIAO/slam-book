@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include <Eigen/Core>
+#include <eigen3/Eigen/Core>
 #include <pangolin/pangolin.h>
 #include <unistd.h>
 

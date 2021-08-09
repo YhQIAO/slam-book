@@ -3,16 +3,20 @@ project(ch7)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories("/usr/include/eigen3")
-
-find_package(OpenCV REQUIRED)
-INCLUDE_DIRECTORIES(${OpenCV_INLCUDE_DIRS})
+find_package(Eigen3)
+include_directories(Eigen3_INCLUDE_DIRS)
 
 # 添加Pangolin依赖
 find_package( Pangolin )
 include_directories( ${Pangolin_INCLUDE_DIRS} )
+# opencv
+find_package(OpenCV REQUIRED)
+include_directories(OpenCV_INCLUDE_DIRS)
+#g2o
+find_package(g2o)
+include_directories(G2O_INCLUDE_DIRS)
 
-add_executable(orb_cv orb_cv.cpp triangulation.cpp)
+add_executable(orb_cv orb_cv.cpp)
 target_link_libraries(orb_cv ${OpenCV_LIBS})
 
 add_executable(pose_estimation_2d2d pose_estimation_2d2d.cpp)
@@ -20,3 +24,9 @@ target_link_libraries(pose_estimation_2d2d ${OpenCV_LIBS})
 
 add_executable(triangulation triangulation.cpp)
 target_link_libraries(triangulation ${OpenCV_LIBS} ${Pangolin_LIBRARIES})
+
+add_executable(pose_estimation_3d2d pose_estimation_3d2d.cpp)
+target_link_libraries(pose_estimation_3d2d
+        ${OpenCV_LIBS}
+        g2o_core g2o_stuff
+        fmt) # when use sophus remember to use fmt
