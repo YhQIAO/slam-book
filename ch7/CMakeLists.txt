@@ -16,6 +16,8 @@ include_directories(OpenCV_INCLUDE_DIRS)
 find_package(g2o)
 include_directories(G2O_INCLUDE_DIRS)
 
+find_package(Ceres)
+
 add_executable(orb_cv orb_cv.cpp)
 target_link_libraries(orb_cv ${OpenCV_LIBS})
 
@@ -36,8 +38,8 @@ target_link_libraries(pose_estimation_3d3d ${OpenCV_LIBS}
         g2o_core g2o_stuff
         fmt)
 
-add_executable(my_gaussnewton_3d2d my_gaussnewton_3d2d.cpp)
-target_link_libraries(my_gaussnewton_3d2d
+add_executable(my_gaussNewton_3d2d my_gaussNewton_3d2d.cpp)
+target_link_libraries(my_gaussNewton_3d2d
         ${OpenCV_LIBS}
         g2o_core g2o_stuff
         fmt)
